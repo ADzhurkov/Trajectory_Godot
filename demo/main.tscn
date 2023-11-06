@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ceshih182haqb"]
+
+[node name="main" type="Node3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="GDExample" type="GDExample" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.50316, 10, 10)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="GDExample"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8325, -10, -10)
