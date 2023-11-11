@@ -13,8 +13,8 @@ class GDDrawOrbit : public Path2D {
 	
 private:
 	double time_passed;
-	
-
+	float a;
+	float e; 
 
 protected:
 	static void _bind_methods();
@@ -25,6 +25,12 @@ public:
     void _draw();
 	Ref<Curve2D> curve;
 	PackedVector2Array points;
+
+	float get_a();
+	void set_a(float p_a);
+
+	float get_e();
+	void set_e(float p_e);
 	// Ref<Curve2D> get_curve();
 	//void set_curve(Ref<Curve2D> curve);
     void _makecurve();
